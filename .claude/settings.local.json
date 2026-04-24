@@ -1,0 +1,20 @@
+{
+  "permissions": {
+    "allow": [
+      "Bash(python:*)",
+      "Bash(/root/miniconda3/envs/qwen3-asr/bin/python inference.py)",
+      "Bash(export:*)",
+      "Bash(/root/miniconda3/envs/qwen3-asr/bin/python -c \"import torch; print\\('PyTorch version:', torch.__version__\\); print\\('CUDA available:', torch.cuda.is_available\\(\\)\\); print\\('CUDA version:', torch.version.cuda if torch.cuda.is_available\\(\\) else 'N/A'\\)\")",
+      "Bash(pip index:*)",
+      "Bash(/root/miniconda3/bin/conda env:*)",
+      "Bash(/root/miniconda3/envs/qwen_lora/bin/python -c \"import torch; print\\('PyTorch:', torch.__version__\\); print\\('CUDA available:', torch.cuda.is_available\\(\\)\\); print\\('CUDA version:', torch.version.cuda if torch.cuda.is_available\\(\\) else 'N/A'\\)\")",
+      "Bash(/root/miniconda3/envs/qwen_lora/bin/python -c \"import torch; x = torch.rand\\(10, device='cuda'\\); print\\('GPU test passed:', x.device\\)\")",
+      "Bash(/root/miniconda3/bin/conda create:*)",
+      "Bash(/root/miniconda3/envs/qwen3-asr/bin/python -c \"import torch; print\\('PyTorch:', torch.__version__\\); print\\('CUDA available:', torch.cuda.is_available\\(\\)\\); import qwen_asr; print\\('qwen_asr imported successfully'\\)\")",
+      "Bash(curl:*)",
+      "Bash(pkill:*)",
+      "Bash(git add:*)",
+      "Bash(git commit:*)"
+    ]
+  }
+}
